@@ -91,14 +91,14 @@ function islandora_find_replace_find_form($form, &$form_state) {
   $form['search'] = array(
     '#type' => 'textfield',
     '#title' => t('Search text'),
-    '#description' => t('The text to search for in the datastream.'),
+    '#description' => t('The text to search for in the datastream. Case-sensitive.'),
     '#required' => TRUE,
   );
 
   $form['replace'] = array(
     '#type' => 'textfield',
     '#title' => t('Replacement text'),
-    '#description' => t('The text to replace the search with. Use (empty) to replace the search text with nothing.'),
+    '#description' => t('The text to replace the search with. Use (empty) to replace the search text with nothing. Case-sensitive.'),
     '#required' => TRUE,
   );
 
